@@ -34,7 +34,7 @@ jobs:
       run: npm run build --if-present  # Ejecuta la construcción de la aplicación
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.1.0
+      uses: JamesIves/github-pages-deploy-action@v4  # Usando la versión más reciente estable
       with:
         branch: gh-pages  # Rama donde se desplegarán los archivos generados
         folder: dist  # Carpeta donde Vite genera los archivos de producción
